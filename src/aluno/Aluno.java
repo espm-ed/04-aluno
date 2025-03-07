@@ -36,4 +36,28 @@ public class Aluno {
         }
         return media / listaMedia.size();
     }
+
+    public int getRa() {
+        return ra;
+    }
+
+    public void setRa(int ra) {
+        this.ra = ra;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    @Override
+    public String toString() {
+        String aux = "";
+        aux += "RA: " + ra + "\n";
+        aux += "Nome: " + nome;
+        return aux;
+    }
 }

@@ -5,6 +5,7 @@ public class Main {
         Util util = new Util();
         util.menu();
 
-        new Util().menu();
+        // uma outra opção para gerar o objeto para acessar o método menu()
+        //new Util().menu();
     }
 }
