@@ -8,9 +8,9 @@ import java.util.List;
 
 public class Util {
     
-    private static List<Aluno> listaAluno = new ArrayList<>();
+    private List<Aluno> listaAluno = new ArrayList<>();
 
-    public static void menu() {
+    public void menu() {
         String aux = "Escolha opção\n";
         aux += "1. Cadastrar aluno\n";
             aux += "2. Pesquisar aluno\n";
@@ -28,6 +28,9 @@ public class Util {
                     case 1:
                         cadastrar();
                         break;
+                    case 2:
+                        pesquisar();
+                        break;
                 }
             }
         } while(opcao != 4);
@@ -35,7 +38,7 @@ public class Util {
     }
 
     // método para cadastrar um aluno
-    private static void cadastrar() {
+    private void cadastrar() {
         int ra = parseInt(showInputDialog("RA"));
         String nome = showInputDialog("Nome");
         listaAluno.add(new Aluno(ra, nome));
